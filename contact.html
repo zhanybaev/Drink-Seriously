@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="https://images.squarespace-cdn.com/content/v1/5773ced9197aea40f128f533/1467231144649-22YJ5L9V460WO5F0B2VV/favicon.ico?format=100w" type="image/x-icon">
+    <title>Contact —   </title>
+</head>
+
+<body>
+    <!-- ! Header Start -->
+    <header>
+        <nav role="navigation">
+<!--! ==================Burger Menu Start====================== -->
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+        <a class="burger-link" href="index.html"><li>Home</li></a>
+        <a class="burger-link" href="about.html"><li>About</li></a>
+        <a class="burger-link" href="products.html"><li>Info</li></a>
+        <a class="burger-link" href="contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+<!--! ==================Burger Menu End====================== -->
+    <div class="nav__links">
+        <a id="home_link" class="nav-item" href="index.html">HOME</a>
+        <a class="nav-item" href="about.html">ABOUT</a>
+        <a class="nav-item" href="products.html">PRODUCTS</a>
+        <a class="nav-item" href="contact.html">CONTACT</a>
+    </div>
+</nav>
+        <img data-aos="fade-up" id="contact-head-image" src="https://images.squarespace-cdn.com/content/v1/5773ced9197aea40f128f533/1469213309706-HO433S79N2AQA1FWK7K2/logo-bubbles-2-01.jpg?format=500w" alt="contact-head-image">
+    </header>
+    <!-- ! Header End -->    
+    <!-- ! Contact Container Start -->
+    <section data-aos="fade-up" class="contact-content">
+        <div data-aos="fade-up" class="contact-content__description">
+            <p>We'd love to hear from you! Fill out the form below or email us at <br>
+            <a target="_blank" href="mailto:carly@drinkseriously.com">carly@drinkseriously.com</a> </p>
+        </div>
+        <form data-aos="fade-up" class="contact-content__inp-block">
+            <fieldset class="form-name fields name required">
+                <legend>Name *</legend>
+                <div class="name__inputs">
+                    <div class="name__inputs_firstName">
+                        <input type="text" id="firsName_inp" >
+                        <label id="firstName_label" for="firsName_inp">First Name</label>
+                    </div>
+                    <div class="name__inputs_lastName">
+                        <input type="text" id="lastName_inp" >
+                        <label id="lastName_label" for="lastName_inp">Last Name</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-email fields name required">
+                <legend>Email Address *</legend>
+                <input type="text" id="email_inp" >
+            </fieldset>
+            <fieldset class="form-subject fields name required">
+                <legend>Subject</legend>
+                <input type="text" id="subject_inp" >
+            </fieldset>
+            <fieldset class="form-message fields name required">
+                <legend>Message</legend>
+                <textarea type="text" id="message_inp" ></textarea>
+            </fieldset>
+            <button data-aos="fade-up" type="button" class="form-submit">SUBMIT</button>
+        </form>
+
+    </section>
+    <!-- ! Contact Container End -->
+    
+    <!-- ! Footer Start -->
+    <footer data-aos="zoom-in" >
+    <a href="https://www.instagram.com/drinkseriously"><i id="instagram" class="fab fa-instagram fa-lg"></i></a>
+    <a href="https://www.facebook.com/drinkseriously"><i id="facebook" class="fab fa-facebook-f fa-lg"></i></a>
+</footer>
+    <!-- ! Footer End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

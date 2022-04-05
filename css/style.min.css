@@ -1,0 +1,824 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Raleway:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+@font-face {
+  font-family: "Europe";
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
+}
+.more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
+  color: black;
+  font-style: normal;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 51.225px;
+  letter-spacing: 1.53675px;
+  line-height: 51.225px;
+  margin-bottom: 20px;
+}
+
+.more_about_us .info a, .discover .info a, .contact_us .info a {
+  text-decoration: none;
+  color: #00a0df;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.more_about_us, .discover, .contact_us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 113px 155px 0;
+}
+.more_about_us img, .discover img, .contact_us img {
+  width: 44.5%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.burger-link {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle {
+  display: none;
+  position: fixed;
+  top: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -10px;
+  left: -48vw;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  left: -48vw;
+  background: black;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: white;
+}
+
+/*
+ * hide the middle one
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+  position: absolute;
+  left: -45vw;
+  width: 100vw;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 80px;
+  text-align: center;
+  background: #111;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 5px 0;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3.36px;
+  line-height: 15.2px;
+  color: white;
+}
+
+/*
+ * slide it in
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+nav {
+  text-align: center;
+  margin: 40.98px auto;
+}
+nav a {
+  font-family: "Bebas Neue";
+  text-decoration: none;
+  font-size: 14px;
+  text-size-adjust: 100%;
+  font-weight: 400;
+  letter-spacing: 1.82px;
+  color: #aaa;
+  line-height: 14px;
+  text-rendering: optimizelegibility;
+  margin-left: 15px;
+}
+nav .current_page {
+  color: black;
+  transition: 0.5s;
+}
+
+#current {
+  color: black;
+  transition: 0.5s;
+}
+
+.nav-item:hover {
+  transition: 0.5s;
+  color: black;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 203px;
+}
+
+.main_image {
+  width: 100%;
+  text-align: center;
+  margin-top: 68px;
+}
+.main_image img {
+  width: 85%;
+}
+
+@media all and (max-width: 775px) {
+  #menuToggle {
+    display: block;
+  }
+
+  .nav__links {
+    display: none;
+  }
+}
+@media all and (max-width: 600px) {
+  .logo img {
+    width: 140px !important;
+  }
+}
+@font-face {
+  font-family: "Europe";
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
+}
+.more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
+  color: black;
+  font-style: normal;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 51.225px;
+  letter-spacing: 1.53675px;
+  line-height: 51.225px;
+  margin-bottom: 20px;
+}
+
+.more_about_us .info a, .discover .info a, .contact_us .info a {
+  text-decoration: none;
+  color: #00a0df;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.more_about_us, .discover, .contact_us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 113px 155px 0;
+}
+.more_about_us img, .discover img, .contact_us img {
+  width: 44.5%;
+}
+@media screen and (max-width: 770px) {
+  .home .more_about_us, .home .contact_us {
+    flex-wrap: wrap-reverse;
+  }
+  .home .more_about_us {
+    margin-top: 37px !important;
+  }
+  .home .discover {
+    flex-wrap: wrap;
+    margin-top: 58px !important;
+  }
+  .home .info {
+    margin-top: 52px;
+  }
+  .home img {
+    width: 293px !important;
+  }
+  .home h3 {
+    font-size: 42px !important;
+  }
+  .home a {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .more_about_us, .discover, .contact_us {
+    margin: 0 55px 0 55px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .more_about_us img, .discover img, .contact_us img {
+    width: 230px !important;
+  }
+}
+@font-face {
+  font-family: "Europe";
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
+}
+.more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
+  color: black;
+  font-style: normal;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 51.225px;
+  letter-spacing: 1.53675px;
+  line-height: 51.225px;
+  margin-bottom: 20px;
+}
+
+.more_about_us .info a, .discover .info a, .contact_us .info a {
+  text-decoration: none;
+  color: #00a0df;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.more_about_us, .discover, .contact_us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 113px 155px 0;
+}
+.more_about_us img, .discover img, .contact_us img {
+  width: 44.5%;
+}
+footer {
+  text-align: center;
+  margin-top: 40.98px;
+  margin-bottom: 180px;
+}
+footer i {
+  margin-right: 20px;
+  transition: 0.4s;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer:hover a {
+  color: gray;
+}
+
+#instagram:hover {
+  color: black;
+}
+
+#facebook:hover {
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}
+
+@font-face {
+  font-family: "europa";
+  src: url(../Europa/europa.ttf) format("truetype");
+}
+.productsMainText {
+  text-align: center;
+  width: 33.2%;
+}
+.productsMainText .productsMainText__content {
+  width: 100%;
+}
+.productsMainText .productsMainText__content h2 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  line-height: 48px;
+}
+.productsMainText .productsMainText__content h3 {
+  font-family: "Europe";
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+}
+
+.productsContent {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.productsContent .productBlock {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.productsContent .productBlock .productBlock__description {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 535px;
+  text-align: left;
+}
+.productsContent .productBlock .productBlock__description h3 {
+  margin: 30px 0;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  font-family: "Europe";
+}
+.productsContent .productBlock .productBlock__description #x-logo {
+  width: 262px;
+}
+.productsContent .productBlock .productBlock__description p {
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.32px;
+  line-height: 30.4px;
+  font-family: "Europe";
+}
+.productsContent .productBlock .bottle_image {
+  padding-left: 50px;
+}
+.productsContent .productBlockReverse {
+  flex-direction: row-reverse;
+}
+.productsContent .productBlockReverse .bottle_image {
+  margin-left: 0;
+  margin-right: 93px;
+}
+
+@media screen and (max-width: 780px) {
+  .productBlock__description {
+    width: 32.2% !important;
+  }
+}
+@media screen and (max-width: 650px) {
+  .productsMainText {
+    width: 80%;
+  }
+
+  .productBlock {
+    margin-top: 0 !important;
+    flex-direction: column !important;
+  }
+  .productBlock .productBlock__description {
+    width: 100% !important;
+    padding-left: 50px;
+    height: auto !important;
+  }
+
+  .productBlockReverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .bottle_image {
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@font-face {
+  font-family: "Europe";
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
+}
+.more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
+  color: black;
+  font-style: normal;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 51.225px;
+  letter-spacing: 1.53675px;
+  line-height: 51.225px;
+  margin-bottom: 20px;
+}
+
+.more_about_us .info a, .discover .info a, .contact_us .info a {
+  text-decoration: none;
+  color: #00a0df;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.more_about_us, .discover, .contact_us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 113px 155px 0;
+}
+.more_about_us img, .discover img, .contact_us img {
+  width: 44.5%;
+}
+.aboutHeaderText {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 43%;
+  position: relative;
+}
+.aboutHeaderText .header-image-x-logo {
+  position: absolute;
+  width: 203px;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aboutHeaderText h3 {
+  z-index: 3;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  line-height: 48px;
+  font-size: 40px;
+}
+
+.about {
+  margin-top: 95px;
+  padding: 0 109px;
+}
+.about .our-story {
+  display: flex;
+  justify-content: space-between;
+}
+.about .our-story .our-story__left {
+  margin-top: 20%;
+  max-width: 486px;
+}
+.about .our-story .our-story__left h2 {
+  font-family: "Europe";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.about .our-story .our-story__left p {
+  margin: 20px 0 25px 0;
+  font-family: "Europe";
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  line-height: 30.4px;
+  display: flex;
+  word-wrap: break-word;
+}
+.about .our-story .our-story__right {
+  width: 39%;
+}
+.about .our-story .our-story__right img {
+  width: 100%;
+}
+
+.recycle {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.recycle .recycle__left img {
+  width: 452px;
+}
+.recycle .recycle__right {
+  max-width: 533px;
+  width: 39%;
+}
+.recycle .recycle__right img {
+  width: 160px;
+  padding: 17px 0;
+}
+.recycle .recycle__right h2 {
+  font-family: "Europe";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  margin-top: 17px;
+}
+.recycle .recycle__right p {
+  font-family: "Europe";
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  line-height: 30.4px;
+}
+
+@media screen and (max-width: 1060px) {
+  .recycle {
+    margin-top: 20px !important;
+    flex-direction: column;
+  }
+  .recycle .recycle__left img {
+    width: 100% !important;
+  }
+  .recycle .recycle__right {
+    max-width: 100%;
+    width: 100% !important;
+  }
+  .recycle .recycle__right img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .our-story__left {
+    max-width: 60% !important;
+  }
+
+  .our-story__right {
+    width: 325px !important;
+  }
+  .our-story__right img {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .our-story {
+    flex-wrap: wrap;
+  }
+
+  .our-story__right {
+    width: 100% !important;
+  }
+
+  .our-story__left {
+    margin-top: 0 !important;
+    max-width: 486px !important;
+  }
+
+  .aboutHeaderText {
+    width: 80%;
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .about {
+    padding: 0 50px !important;
+    margin-top: 40px;
+  }
+}
+@font-face {
+  font-family: "Europe";
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
+  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
+}
+.more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
+  color: black;
+  font-style: normal;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 51.225px;
+  letter-spacing: 1.53675px;
+  line-height: 51.225px;
+  margin-bottom: 20px;
+}
+
+.more_about_us .info a, .discover .info a, .contact_us .info a {
+  text-decoration: none;
+  color: #00a0df;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.more_about_us, .discover, .contact_us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 113px 155px 0;
+}
+.more_about_us img, .discover img, .contact_us img {
+  width: 44.5%;
+}
+#contact-head-image {
+  margin-top: 40px;
+  width: 203px;
+}
+
+.contact-content {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-content .contact-content__description {
+  width: 40.5%;
+  display: inline-block;
+  text-align: left;
+  font-family: "Europe";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.32px;
+  line-height: 30.4px;
+}
+.contact-content .contact-content__description a {
+  color: #00a0df;
+  text-decoration: none;
+}
+.contact-content .contact-content__inp-block {
+  padding-top: 17px;
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  width: 40.5%;
+}
+.contact-content .contact-content__inp-block legend {
+  font-size: 17px;
+  font-weight: 300;
+  color: #242424;
+}
+.contact-content .contact-content__inp-block label {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #242424;
+  letter-spacing: 0.32px;
+}
+.contact-content .contact-content__inp-block input {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.contact-content .contact-content__inp-block fieldset {
+  border: none;
+  width: 100%;
+}
+.contact-content .contact-content__inp-block .form-name {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.contact-content .contact-content__inp-block .form-name .name__inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.contact-content .contact-content__inp-block .form-name .name__inputs input {
+  width: 89.5%;
+  padding: 12px;
+}
+.contact-content .contact-content__inp-block .form-name .name__inputs .name__inputs_firstName, .contact-content .contact-content__inp-block .form-name .name__inputs .name__inputs_lastName {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-content .contact-content__inp-block .form-email, .contact-content .contact-content__inp-block .form-subject {
+  margin: 24px 0 0 0;
+}
+.contact-content .contact-content__inp-block .form-email input, .contact-content .contact-content__inp-block .form-subject input {
+  width: 95%;
+  padding: 12px;
+}
+.contact-content .contact-content__inp-block .form-message {
+  margin-top: 24px;
+}
+.contact-content .contact-content__inp-block .form-message textarea {
+  width: 95%;
+  padding: 12px;
+  min-height: 80px;
+  text-align: left;
+  overflow-wrap: break-word;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.contact-content .contact-content__inp-block .form-submit {
+  padding: 14px;
+  margin-top: 24px;
+  border: #272727 solid 2px;
+  width: 127px;
+  height: 46px;
+  background: white;
+  transition: 0.3s;
+}
+
+.form-submit:hover {
+  background-color: #272727 !important;
+  color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .name__inputs input {
+    width: 88% !important;
+  }
+}
+@media screen and (max-width: 660px) {
+  .contact-content__inp-block {
+    width: 80% !important;
+  }
+
+  .contact-content__description {
+    width: 80% !important;
+  }
+
+  #contact-head-image {
+    margin-top: 0px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-content__inp-block {
+    width: 75% !important;
+  }
+
+  .contact-content__description {
+    width: 75% !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contact-content__inp-block {
+    width: 70% !important;
+  }
+
+  .contact-content__description {
+    width: 70% !important;
+  }
+}
