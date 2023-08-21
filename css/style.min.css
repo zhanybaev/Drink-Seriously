@@ -19,11 +19,7 @@ body {
   overflow-x: hidden !important;
 }
 
-@font-face {
-  font-family: "Europe";
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
-}
+
 .more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
   color: black;
   font-style: normal;
@@ -231,11 +227,7 @@ nav .current_page {
     width: 140px !important;
   }
 }
-@font-face {
-  font-family: "Europe";
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
-}
+
 .more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
   color: black;
   font-style: normal;
@@ -297,11 +289,7 @@ nav .current_page {
     width: 230px !important;
   }
 }
-@font-face {
-  font-family: "Europe";
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
-}
+
 .more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
   color: black;
   font-style: normal;
@@ -469,11 +457,7 @@ footer:hover a {
     margin-right: 0 !important;
   }
 }
-@font-face {
-  font-family: "Europe";
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
-}
+
 .more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
   color: black;
   font-style: normal;
@@ -648,11 +632,7 @@ footer:hover a {
     margin-top: 40px;
   }
 }
-@font-face {
-  font-family: "Europe";
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot");
-  src: url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.woff") format("woff"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/752d4e027a4d1b80c78ef8fb4f3aa2a6.svg#Europe") format("svg");
-}
+
 .more_about_us .info h3, .discover .info h3, .contact_us .info h3 {
   color: black;
   font-style: normal;
